@@ -1,0 +1,23 @@
+{
+  "name": "investira.react.lib",
+  "version": "1.0.0",
+  "description": "Biblioteca React para Front-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/investira/investira.react.lib.git"
+  },
+  "keywords": [
+    "react",
+    "biblioteca"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/investira/investira.react.lib/issues"
+  },
+  "homepage": "https://github.com/investira/investira.react.lib#readme"
+}
