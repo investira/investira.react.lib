@@ -1,23 +1,44 @@
 {
-  "name": "investira.react.lib",
-  "version": "1.0.0",
-  "description": "Biblioteca React para Front-end",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/investira/investira.react.lib.git"
-  },
-  "keywords": [
-    "react",
-    "biblioteca"
-  ],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/investira/investira.react.lib/issues"
-  },
-  "homepage": "https://github.com/investira/investira.react.lib#readme"
+    "name": "investira.react.lib",
+    "version": "1.0.0",
+    "description": "Biblioteca React para Front-end",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/investira/investira.react.lib.git"
+    },
+    "keywords": [
+        "react",
+        "biblioteca"
+    ],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/investira/investira.react.lib/issues"
+    },
+    "homepage": "https://github.com/investira/investira.react.lib#readme",
+    "peerDependencies": {
+        "@date-io/moment": "1.3.8",
+        "@material-ui/core": "4.9.9",
+        "@material-ui/lab": "4.0.0-alpha.48",
+        "@material-ui/pickers": "3.1.2",
+        "classnames": "2.2.6",
+        "formik": "2.1.4",
+        "hammerjs": "2.0.8",
+        "investira.data": "1.1.8",
+        "investira.sdk": "2.0.8",
+        "react-redux": "5.1.2",
+        "react-transition-group": "4.3.0",
+        "react-vis": "1.11.6",
+        "redux": "4.0.1",
+        "redux-thunk": "2.3.0"
+    },
+    "dependencies": {
+        "investira.sdk": "2.0.8",
+        "redux-persist": "^6.0.0",
+        "redux-persist-pouchdb": "^0.2.1"
+    }
 }
