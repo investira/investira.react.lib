@@ -28,6 +28,7 @@
         "classnames": "2.2.6",
         "formik": "2.1.4",
         "hammerjs": "2.0.8",
+        "idb": "^6.0.0",
         "investira.data": "1.1.8",
         "investira.sdk": "2.0.8",
         "react-redux": "5.1.2",
