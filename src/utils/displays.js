@@ -171,19 +171,7 @@ const displays = {
             return xParts.map((xPart, xIndex) => {
                 const isPesquisa = xTerms.includes(xPart.toLowerCase());
 
-                return [{ isPesquisa, text: xPart }];
-
-                // return (
-                //     <span
-                //         key={xIndex}
-                //         style={
-                //             isPesquisa
-                //                 ? { fontWeight: 'bold', color: '#64ffda' }
-                //                 : {}
-                //         }>
-                //         {xPart}
-                //     </span>
-                // );
+                return { isPesquisa, text: xPart };
             });
         }
 
