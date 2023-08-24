@@ -29,8 +29,6 @@ export { default as idbStorage } from './src/storage/idbStorage';
 // HOOKs
 export { default as useLongPress } from './src/hooks/useLongPress';
 
-// HOCs
-// export { default as withDialog } from './src/hoc/withDialog';
-// export { default as infiniteScroll } from './src/hoc/infiniteScroll';
-// export { default as withMediaQueries } from './src/hoc/withMediaQueries';
-// export { default as withRedux } from './src/hoc/withRedux';
+// Request
+export { default as mockRequest } from './src/request/mockRequest';
+export { default as mockURLRequest } from './src/request/mockURLRequest';
