@@ -176,6 +176,23 @@ const displays = {
         }
 
         return pText;
+    },
+    stringToColor: (pString = '') => {
+        let xHash = 0;
+        let xI;
+
+        for (xI = 0; xI < pString.length; xI += 1) {
+            xHash = pString.charCodeAt(xI) + ((xHash << 5) - xHash);
+        }
+
+        let color = '#';
+
+        for (xI = 0; xI < 3; xI += 1) {
+            const xValue = (xHash >> (xI * 8)) & 0xff;
+            color += `00${xValue.toString(16)}`.slice(-2);
+        }
+
+        return color;
     }
 };
 
