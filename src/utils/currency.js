@@ -62,6 +62,17 @@ const currency = {
         });
 
         return xValue.replace(/[a-z]{3}/i, '').trim();
+    },
+
+    toDecimal: (pValue, pDecimal, pLocale = 'pt-BR', pSeparator = ',') => {
+        let xValue = currency.currencyToNumber(pValue, pSeparator, pDecimal);
+
+        // xValue = parseFloat(xValue).toLocaleString(pLocale, {
+        //     style: 'decimal',
+        //     minimumFractionDigits: pDecimal
+        // });
+
+        return xValue.replace(/[a-z]{3}/i, '').trim();
     }
 };
 
