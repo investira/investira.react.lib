@@ -1,6 +1,7 @@
 const currency = {
     currencyToNumber: (pValue, pSeparator = '.', pDecimal) => {
         const xDigits = currency.getDigitsFromValue(pValue);
+
         const xDigitsWithPadding = currency.padDigits(xDigits, pDecimal);
 
         let xValue = currency.addDecimalToNumber(
@@ -64,13 +65,21 @@ const currency = {
         return xValue.replace(/[a-z]{3}/i, '').trim();
     },
 
-    toDecimal: (pValue, pDecimal, pLocale = 'pt-BR', pSeparator = ',') => {
+    toDecimal: (
+        pValue,
+        pSeparator = '.',
+        pCurrency = 'BRL',
+        pLocale = 'pt-BR',
+        pDecimal = 4
+    ) => {
         let xValue = currency.currencyToNumber(pValue, pSeparator, pDecimal);
 
-        // xValue = parseFloat(xValue).toLocaleString(pLocale, {
-        //     style: 'decimal',
-        //     minimumFractionDigits: pDecimal
-        // });
+        xValue = parseFloat(xValue).toLocaleString(pLocale, {
+            style: 'currency',
+            currency: pCurrency,
+            currencyDisplay: 'code',
+            minimumFractionDigits: pDecimal
+        });
 
         return xValue.replace(/[a-z]{3}/i, '').trim();
     }
